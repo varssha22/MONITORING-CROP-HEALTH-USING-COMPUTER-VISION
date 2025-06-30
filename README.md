@@ -58,15 +58,15 @@ MONITORING-CROP-HEALTH-USING-COMPUTER-VISION/
 
 <h4>📊 Model Architecture</h4>
 
-![](data/EfficientNet-Architecture-diagram.png) <br>
+<img src="data/EfficientNet-Architecture-diagram.png" width=500> <br>
 
 <h4>🌾 MBConv Block</h4>
 
-![](data/MBConv-block-with-Squeeze-and-Excitation.png) <br>
+<img src="data/MBConv-block-with-Squeeze-and-Excitation.png" width=500> <br>
 
 <h4>🌾 CBAM Module Illustration</h4>
 
-![](data/The-Convolutional-Block-Attention-Module-CBAM-The-upper-side-is-the-channel-attention.png) <br>
+<img src="data/The-Convolutional-Block-Attention-Module-CBAM-The-upper-side-is-the-channel-attention.png" width=500> <br>
 
 
 <h2>🛠️ Model Training:</h2>
