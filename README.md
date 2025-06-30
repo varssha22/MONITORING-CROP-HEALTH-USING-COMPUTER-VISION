@@ -75,9 +75,9 @@ MONITORING-CROP-HEALTH-USING-COMPUTER-VISION/
 </ul>
 
 <h2>📂 Output Samples:</h2>
-![](https://github.com/varssha22/MONITORING-CROP-HEALTH-USING-COMPUTER-VISION/blob/main/data/Output_Sample/gradcam_output_18.jpg) <br>
-![](https://github.com/varssha22/MONITORING-CROP-HEALTH-USING-COMPUTER-VISION/blob/main/data/Output_Sample/gradcam_output_13.jpg) <br>
-![](https://github.com/varssha22/MONITORING-CROP-HEALTH-USING-COMPUTER-VISION/blob/main/data/Output_Sample/gradcam_output_20.jpg) <br>
+![](/blob/main/data/Output_Sample/gradcam_output_18.jpg) <br>
+![](/blob/main/data/Output_Sample/gradcam_output_13.jpg) <br>
+![](/blob/main/data/Output_Sample/gradcam_output_20.jpg) <br>
 
 <h2>📈 Results:</h2>
 <table border="1" cellpadding="5">
