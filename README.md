@@ -57,13 +57,16 @@ MONITORING-CROP-HEALTH-USING-COMPUTER-VISION/
 </ul> <br>
 
 <h4>📊 Model Architecture</h4>
-<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.researchgate.net%2Ffigure%2FArchitecture-of-EfficientNet-B0-with-MBConv-as-Basic-building-blocks_fig3_356981443&psig=AOvVaw2d9VAnyC26aNDLJETZAUe5&ust=1751367819980000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCMCzrNj_mI4DFQAAAAAdAAAAABAE" width="500"/>
+
+![](data/EfficientNet-Architecture-diagram.png) <br>
 
 <h4>🌾 MBConv Block</h4>
-<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.researchgate.net%2Ffigure%2FMBConv-block-with-Squeeze-and-Excitation_fig1_382111816&psig=AOvVaw1lA0gd2Borh_WV763MRQ3E&ust=1751367896800000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCIibz4SAmY4DFQAAAAAdAAAAABAE" width="500"/>
+
+![](data/MBConv-block-with-Squeeze-and-Excitation.png) <br>
 
 <h4>🌾 CBAM Module Illustration</h4>
-<img src="[https://paperswithcode.com/media/methods/Screen_Shot_2020-03-05_at_3.06.53_PM.png" alt="CBAM Attention Block](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.researchgate.net%2Ffigure%2FThe-Convolutional-Block-Attention-Module-CBAM-The-upper-side-is-the-channel-attention_fig1_366357680&psig=AOvVaw0VMtnrMg-QcL5mvxBEoaaD&ust=1751367970913000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCNCTwKOAmY4DFQAAAAAdAAAAABAL)" width="500"/> <br>
+
+![](data/The-Convolutional-Block-Attention-Module-CBAM-The-upper-side-is-the-channel-attention.png) <br>
 
 
 <h2>🛠️ Model Training:</h2>
