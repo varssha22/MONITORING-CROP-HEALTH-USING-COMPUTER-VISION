@@ -17,22 +17,25 @@ The goal is to classify regions of crop images as <b>healthy</b> or <b>diseased<
 
 <pre>
 MONITORING-CROP-HEALTH-USING-COMPUTER-VISION/
-├── data/               📂 Sample datasets and image folders
-│   └── test_images/    📂 Test images for Grad-CAM++ inference
-├── models/             📂 Saved model weights (.h5)
+├── data/                 📂 Sample datasets and image folders
+│   └── test_images/      📂 Test images for Grad-CAM++ inference
+│   └──Output_Sample/     📂 GradCAM output samples
+├── models/               📂 Saved model weights (.h5)
 │   ├── efficientnet_b0_cbam_model.h5
 │   └── efficientnet_b0_final_model.h5
-├── notebooks/          📓 Training and inference notebooks
+├── notebooks/            📓 Training and inference notebooks
 │   ├── EfficientNet_b0_training.ipynb
 │   ├── Efficient_net_b0_CBAM_training.ipynb
 │   ├── project-evaluation.ipynb
 │   └── project-inference.ipynb
-├── src/                ⚙️ Source code files
-│   ├── EfficientNet_CBAM_Architecture.ipynb
-│   ├── EfficientNet_b0_Architecture.ipynb
-│   └── GradCAM.ipynb
-├── Output_Sample/      📁 Grad-CAM++ output examples
-├── README.md           📄 Project documentation
+├── src/                  ⚙️ Source code files
+│   ├── EfficientNet_b0_CBAM_Architecture.py
+│   ├── EfficientNet_b0_Architecture.py
+│   └── gradcam.py
+│   └── Training_model.py
+│   └── evaluation.py
+│   └── inference.py
+├── README.md             📄 Project documentation
 </pre>
 
 <h2>📦 Requirements:</h2>
