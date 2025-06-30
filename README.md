@@ -110,9 +110,9 @@ MONITORING-CROP-HEALTH-USING-COMPUTER-VISION/
 
 <h2>📂 Output Samples:</h2>
 
-<img src="data/Output_Sample/gradcam_output_18.jpg" width="300"> <br>
-<img src="data/Output_Sample/gradcam_output_13.jpg" width="300"> <br>
-<img src="data/Output_Sample/gradcam_output_20.jpg" width="300"> <br>
+<img src="data/Output_Sample/gradcam_output_18.jpg"> <br>
+<img src="data/Output_Sample/gradcam_output_13.jpg"> <br>
+<img src="data/Output_Sample/gradcam_output_20.jpg"> <br>
 
 <h2>📈 Results:</h2>
 
