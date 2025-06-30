@@ -75,9 +75,9 @@ MONITORING-CROP-HEALTH-USING-COMPUTER-VISION/
 </ul>
 
 <h2>📂 Output Samples:</h2>
-<ul>
-<li>All visualizations saved as .jpg images inside <code>/Output_Sample/</code>.</li>
-</ul>
+![](./data/Output_Sample/gradcam_output%2030.jpg)<br>
+![](./data/Output_Sample/gradcam_output%203.jpg)<br>
+![](./data/Output_Sample/gradcam_output%204.jpg)<br>
 
 <h2>📈 Results:</h2>
 <table border="1" cellpadding="5">
@@ -91,6 +91,12 @@ MONITORING-CROP-HEALTH-USING-COMPUTER-VISION/
 </thead>
 <tbody>
 <tr>
+<td>EfficientNetB0</td>
+<td>100.0%</td>
+<td>~7 Million 🔻</td>
+<td>✅ Yes (Lightweight)</td>
+</tr>
+<tr>
 <td>EfficientNetB0 + CBAM</td>
 <td>99.0%</td>
 <td>~7 Million 🔻</td>
@@ -101,7 +107,7 @@ MONITORING-CROP-HEALTH-USING-COMPUTER-VISION/
 
 <h2>🤝 Acknowledgements:</h2>
 <ul>
-<li>Kaggle – New Plant Diseases Dataset (Augmented)</li>
+<li>Kaggle – [New Plant Diseases Dataset (Augmented)](https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset)</li>
 <li>TensorFlow, OpenCV, and Keras Teams</li>
 </ul>
 
