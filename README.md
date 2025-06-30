@@ -56,7 +56,7 @@ MONITORING-CROP-HEALTH-USING-COMPUTER-VISION/
 <li>Preprocessing included resizing, normalization, and train-test splitting.</li>
 </ul> <br>
 
-<h4>📊 Model Architecture</h4>
+<h4>📊EfficientNet B0 Model Architecture</h4>
 
 <img src="data/EfficientNet-Architecture-diagram.png" width=500> <br>
 
