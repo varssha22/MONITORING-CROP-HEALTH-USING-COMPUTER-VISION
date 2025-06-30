@@ -3,3 +3,4 @@ numpy
 matplotlib
 opencv
 math
+scikit-learn
