@@ -8,6 +8,7 @@ The goal is to classify regions of crop images as <b>healthy</b> or <b>diseased<
 
 <h2>🧠 Models Used:</h2>
 <ul>
+  <li>✅ <b>EfficientNetB0 </b> – Lightweight </li>
   <li>✅ <b>EfficientNetB0 with CBAM</b> – Lightweight, attention-enhanced CNN optimized for plant disease classification.</li>
   <li>✅ <b>Grad-CAM++</b> – Visual explanation technique to highlight critical image regions contributing to the model's prediction.</li>
 </ul>
@@ -81,6 +82,7 @@ MONITORING-CROP-HEALTH-USING-COMPUTER-VISION/
 ![](data/Output_Sample/gradcam_output_20.jpg) <br>
 
 <h2>📈 Results:</h2>
+
 <table border="1" cellpadding="5">
 <thead>
 <tr>
