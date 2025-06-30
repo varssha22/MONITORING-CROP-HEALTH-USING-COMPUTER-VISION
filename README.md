@@ -60,8 +60,8 @@ MONITORING-CROP-HEALTH-USING-COMPUTER-VISION/
 <ol>
 <li>Make sure you have <b>Python 3.8+</b> installed.</li>
 <li>Clone the repository:</li>
-<pre><code>git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name</code></pre>
+<pre><code>git clone https://github.com/varssha22/MONITORING-CROP-HEALTH-USING-COMPUTER-VISION.git
+cd MONITORING-CROP-HEALTH-USING-COMPUTER-VISION</code></pre>
 <li>Install required libraries:</li>
 <pre><code>pip install -r requirements.txt</code></pre>
 </ol>
