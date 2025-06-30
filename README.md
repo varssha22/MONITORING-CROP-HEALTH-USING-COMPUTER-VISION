@@ -43,7 +43,6 @@ MONITORING-CROP-HEALTH-USING-COMPUTER-VISION/
 <li>OpenCV</li>
 <li>NumPy</li>
 <li>Matplotlib</li>
-<li>scikit-learn</li>
 </ul>
 
 <p><b>Install all dependencies:</b></p>
