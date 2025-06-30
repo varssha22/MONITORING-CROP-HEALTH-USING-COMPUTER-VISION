@@ -75,9 +75,9 @@ MONITORING-CROP-HEALTH-USING-COMPUTER-VISION/
 </ul>
 
 <h2>📂 Output Samples:</h2>
-![](data/Output_Sample/gradcam_output%2013.jpg)<br>
-![](data/Output_Sample/gradcam_output%203.jpg)<br>
-![](data/Output_Sample/gradcam_output%204.jpg)<br>
+![](data/Output_Sample/gradcam_output_13.jpg)<br>
+![](data/Output_Sample/gradcam_output_18.jpg)<br>
+![](data/Output_Sample/gradcam_output_20.jpg)<br>
 
 <h2>📈 Results:</h2>
 <table border="1" cellpadding="5">
