@@ -32,7 +32,6 @@ def get_data(train_dir="data/train", val_dir="data/val", image_size=(224, 224), 
         label_mode='categorical',
         shuffle=False
     ).map(preprocess).prefetch(tf.data.AUTOTUNE)
-
     return train_ds, val_ds
 
 # Model selector
@@ -78,13 +77,21 @@ def main(args):
     csv_logger = CSVLogger('training_log.csv', append=True)
 
     model.summary()
+    # Dynamically calculate total number of images
+    train_img_count = sum([len(files) for r, d, files in os.walk("data/train")])
+    val_img_count = sum([len(files) for r, d, files in os.walk("data/val")])
+
+    # Steps calculation
+    batch_size = 32
+    steps_per_epoch = math.ceil(train_img_count / batch_size)
+    validation_steps = math.ceil(val_img_count / batch_size)
 
     history = model.fit(
         train_ds,
         validation_data=val_ds,
         epochs=args.epochs,
-        steps_per_epoch=100,  # Adjust based on dataset size
-        validation_steps=30,  # Adjust based on dataset size
+        steps_per_epoch=steps_per_epoch,  # Adjust based on dataset size
+        validation_steps=validation_steps,  # Adjust based on dataset size
         callbacks=[checkpoint_cb, csv_logger]
     )
 
