@@ -144,6 +144,8 @@ MONITORING-CROP-HEALTH-USING-COMPUTER-VISION/
 <h2>🤝 Acknowledgements:</h2>
 <ul>
 <li><a href="https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset">Kaggle – New Plant Diseases Dataset (Augmented)</a></li>
+<li><a href="https://arxiv.org/pdf/1905.11946">EfficeintNet Paper</a></li>
+<li><a href="https://arxiv.org/pdf/1807.06521v2">CBAM Paper</a></li>
 <li>TensorFlow, OpenCV, and Keras Teams</li>
 </ul>
 
