@@ -18,15 +18,19 @@ def preprocess(img, label):
 
 # Load validation dataset
 def load_val_data(val_dir="data/val", image_size=(224, 224), batch_size=32):
-    val_ds = tf.keras.preprocessing.image_dataset_from_directory(
-        val_dir,
-        image_size=image_size,
-        batch_size=batch_size,
-        label_mode='categorical',
-        shuffle=False
-    ).map(preprocess).prefetch(tf.data.AUTOTUNE)
-    
-    return val_ds
+   raw_val_ds = tf.keras.preprocessing.image_dataset_from_directory(
+    val_dir,
+    image_size=image_size,
+    batch_size=batch_size,
+    label_mode='categorical',
+    shuffle=False
+    )
+
+    class_names = raw_val_ds.class_names
+
+    val_ds = raw_val_ds.map(preprocess).prefetch(tf.data.AUTOTUNE)
+
+    return val_ds,class_names
 
 # Model selector
 def build_model(name):
@@ -39,12 +43,10 @@ def build_model(name):
 
 # Main Evaluation Logic
 def main(args):
-    val_ds = load_val_data()
+    val_ds,class_names = load_val_data()
 
     model = build_model(args.model)
     model.load_weights(args.weights_path)
-
-    class_names = val_ds.class_names
 
     true_labels = []
     for _, labels in val_ds.unbatch():
