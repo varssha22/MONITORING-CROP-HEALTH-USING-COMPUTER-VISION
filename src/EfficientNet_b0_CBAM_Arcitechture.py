@@ -69,7 +69,7 @@ def mbconv_block(inputs, out_channels, expansion_factor, kernel_size, strides, s
     return x
     
 
-def EfficientNetB0_custom(input_shape=(224,224, 3), num_classes=38, dropout_rate=0.2):
+def EfficientNetB0_CBAM(input_shape=(224,224, 3), num_classes=38, dropout_rate=0.2):
     inputs = tf.keras.Input(shape=input_shape)
 
     # Stem
