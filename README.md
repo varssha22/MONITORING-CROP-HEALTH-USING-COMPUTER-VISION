@@ -19,7 +19,7 @@ The goal is to classify regions of crop images as <b>healthy</b> or <b>diseased<
 MONITORING-CROP-HEALTH-USING-COMPUTER-VISION/
 ├── data/                 📂 Sample datasets and image folders
 │   └── test_images/      📂 Test images for Grad-CAM++ inference
-│   └──Output_Sample/     📂 GradCAM output samples
+│   └── Output_Sample/     📂 GradCAM output samples
 ├── models/               📂 Saved model weights (.h5)
 │   ├── efficientnet_b0_cbam_model.h5
 │   └── efficientnet_b0_final_model.h5
