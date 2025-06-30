@@ -43,42 +43,46 @@ MONITORING-CROP-HEALTH-USING-COMPUTER-VISION/
 <li>OpenCV</li>
 <li>NumPy</li>
 <li>Matplotlib</li>
+<li>Scikit-Learn</li>
 </ul>
 
-<p><b>Install all dependencies:</b></p>
-<pre><code>pip install -r requirements.txt</code></pre>
+<h2>📥 Dataset Requirement:</h2>
+<ul>
+<li>📌 Download the <b>Plant Disease Dataset</b> from Kaggle:</li>
+<li><a href="https://www.kaggle.com/datasets/vipoooool/new-plant-diseases-dataset" target="_blank">New Plant Diseases Dataset (Augmented)</a></li>
+<li>Extract the <code>train</code> and <code>val</code> folders into your <code>data/</code> directory.</li>
+</ul>
 
-<h2>⚙️ Installation:</h2>
+<h2>📦 Installation:</h2>
 <ol>
+<li>Make sure you have <b>Python 3.8+</b> installed.</li>
 <li>Clone the repository:</li>
-<pre><code>git clone https://github.com/varssha22/MONITORING-CROP-HEALTH-USING-COMPUTER-VISION.git</code></pre>
-
-<li>Navigate to the project directory:</li>
-<pre><code>cd MONITORING-CROP-HEALTH-USING-COMPUTER-VISION</code></pre>
-
-<li>Install dependencies:</li>
+<pre><code>git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name</code></pre>
+<li>Install required libraries:</li>
 <pre><code>pip install -r requirements.txt</code></pre>
 </ol>
 
 <h2>🚀 Usage:</h2>
-<ol>
-<li>Place your dataset inside the <b>data/</b> folder following the required structure.</li>
-<li>To train the models:</li>
-<pre><code>Open notebooks/EfficientNet_b0_training.ipynb or notebooks/Efficient_net_b0_CBAM_training.ipynb and run all cells.</code></pre>
 
-<li>To evaluate model performance:</li>
-<pre><code>Run notebooks/project-evaluation.ipynb to generate classification reports and accuracy metrics.</code></pre>
+<h3>🔧 1. Train a Model</h3>
+<p>Train <b>EfficientNetB0</b> baseline:</p>
+<pre><code>python src/train.py --model efficientnetb0 --epochs 30 --save_dir models</code></pre>
 
-<li>To visualize predictions with Grad-CAM++:</li>
-<pre><code>Run notebooks/project-inference.ipynb to highlight diseased areas with heatmaps and outlines.</code></pre>
-</ol>
+<p>Or train <b>EfficientNetB0 with CBAM</b> attention mechanism:</p>
+<pre><code>python src/train.py --model efficientnetb0_cbam --epochs 30 --save_dir models</code></pre>
 
-<h2>📁 Dataset:</h2>
-<ul>
-<li>Used an <b>augmented plant disease dataset</b> from Kaggle.</li>
-<li>Images categorized into various healthy and unhealthy classes.</li>
-<li>Preprocessing included resizing, normalization, and train-test splitting.</li>
-</ul> <br>
+<hr>
+
+<h3>📝 2. Generate Classification Report</h3>
+<pre><code>python src/evaluation.py --model efficientnetb0_cbam --weights_path models/best_model.h5</code></pre>
+<p>Output report saved as <code>classification_report.txt</code></p>
+
+<hr>
+
+<h3>🌾 3. Grad-CAM++ Visualization for Test Images</h3>
+<pre><code>python src/inference_gradcam.py --model efficientnetb0_cbam --weights_path models/best_model.h5</code></pre>
+<p>Visualizations saved under <code>gradcam_outputs/</code> folder.</p>
 
 <h4>📊 EfficientNet B0 Model Architecture</h4>
 <img src="data/EfficientNet-Architecture-diagram.png" width=500> <br>
