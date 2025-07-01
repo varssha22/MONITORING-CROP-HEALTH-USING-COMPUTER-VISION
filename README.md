@@ -70,10 +70,10 @@ cd MONITORING-CROP-HEALTH-USING-COMPUTER-VISION</code></pre>
 
 <h3>🔧 1. Train a Model</h3>
 <p>Train <b>EfficientNetB0</b> baseline:</p>
-<pre><code>python src/train.py --model efficientnetb0 --epochs 30 --save_dir models</code></pre>
+<pre><code>python src/Training_model.py --model efficientnetb0 --epochs 30 --save_dir models</code></pre>
 
 <p>Or train <b>EfficientNetB0 with CBAM</b> attention mechanism:</p>
-<pre><code>python src/train.py --model efficientnetb0_cbam --epochs 30 --save_dir models</code></pre>
+<pre><code>python src/Training_model.py --model efficientnetb0_cbam --epochs 30 --save_dir models</code></pre>
 
 <hr>
 
@@ -84,7 +84,7 @@ cd MONITORING-CROP-HEALTH-USING-COMPUTER-VISION</code></pre>
 <hr>
 
 <h3>🌾 3. Grad-CAM++ Visualization for Test Images</h3>
-<pre><code>python src/inference_gradcam.py --model efficientnetb0_cbam --weights_path models/best_model.h5</code></pre>
+<pre><code>python src/inference.py --model efficientnetb0_cbam --weights_path models/best_model.h5</code></pre>
 <p>Visualizations saved under <code>gradcam_outputs/</code> folder.</p>
 
 <h4>📊 EfficientNet B0 Model Architecture</h4>
